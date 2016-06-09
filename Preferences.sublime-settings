@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Colorsublime - Themes/Flatland_Monokai.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 9,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"theme": "Afterglow.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
