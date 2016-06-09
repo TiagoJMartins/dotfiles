@@ -1,0 +1,36 @@
+#!/bin/bash -e
+
+# This script controls the brightness of both of the monitors.
+
+# A value between 0 and 1 must be used with 0 being minimum brightness
+# and 1 being full brightness.
+
+if [[ "$1" == "low" ]]; then
+	xrandr --output DVI-D-0 --brightness 0.2
+	xrandr --output DVI-I-0 --brightness 0.2
+fi
+
+if [[ "$1" == "med" ]]; then
+	xrandr --output DVI-D-0 --brightness 0.5
+	xrandr --output DVI-I-0 --brightness 0.5
+fi
+
+if [[ "$1" == "high" ]]; then
+	xrandr --output DVI-D-0 --brightness 1
+	xrandr --output DVI-I-0 --brightness 1
+fi
+
+if [[ "$1" == "supah-high" ]]; then
+	xrandr --output DVI-D-0 --brightness 2
+	xrandr --output DVI-I-0 --brightness 2
+fi
+
+if [[ "$1" == "help" ]]; then
+	echo brightness \<option\>
+	echo 
+	echo Available options are:
+	echo -   low
+	echo -   med
+	echo -   high
+	echo -   supah-high
+fi
